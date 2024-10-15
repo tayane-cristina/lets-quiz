@@ -1,364 +1,113 @@
 export const generalListQuestions = [
 
     {
-        ask: "",
+        ask: "Qual é a capital da França?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Berlim",
+            "Madri",
+            "Paris",
+            "Lisboa"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
+        answer: "Paris",
+        explanation: "A capital da França é Paris, conhecida por sua rica história, cultura e monumentos icônicos como a Torre Eiffel."
     },
     {
-        ask: "",
+        ask: "Quem escreveu a famosa obra *Hamlet*?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Charles Dickens",
+            "William Shakespeare",
+            "Mark Twain",
+            "Jane Austen"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
+        answer: "William Shakespeare",
+        explanation: "*Hamlet* é uma das tragédias mais famosas de William Shakespeare, escrita no início do século XVII."
     },
     {
-        ask: "",
+        ask: "Qual é o elemento químico com o símbolo 'O'?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Ouro",
+            "Oxigênio",
+            "Ósmio",
+            "Cobre"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
+        answer: "Oxigênio",
+        explanation: "O símbolo 'O' representa o oxigênio, um elemento vital para a respiração e a vida na Terra."
     },
     {
-        ask: "",
+        ask: "Qual é o maior planeta do Sistema Solar?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Terra",
+            "Marte",
+            "Júpiter",
+            "Saturno"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
+        answer: "Júpiter",
+        explanation: "Júpiter é o maior planeta do Sistema Solar, conhecido por suas grandes tempestades e por ter um sistema de anéis."
     },
     {
-        ask: "",
+        ask: "Qual é a moeda oficial do Japão?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Yuan",
+            "Dólar",
+            "Iene",
+            "Won"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
+        answer: "Iene",
+        explanation: "O iene (JPY) é a moeda oficial do Japão e é uma das principais moedas do mundo."
     },
     {
-        ask: "",
+        ask: "Quem foi o primeiro homem a pisar na Lua?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Yuri Gagarin",
+            "Neil Armstrong",
+            "Buzz Aldrin",
+            "John Glenn"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
+        answer: "Neil Armstrong",
+        explanation: "Neil Armstrong foi o primeiro homem a pisar na Lua em 20 de julho de 1969 durante a missão Apollo 11."
     },
     {
-        ask: "",
+        ask: "Qual é a língua mais falada do mundo?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Inglês",
+            "Mandarim",
+            "Espanhol",
+            "Árabe"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
+        answer: "Mandarim",
+        explanation: "O mandarim é a língua mais falada do mundo, com mais de um bilhão de falantes nativos, principalmente na China."
     },
     {
-        ask: "",
+        ask: "Em que continente fica o Egito?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "África",
+            "Ásia",
+            "Europa",
+            "América"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
+        answer: "África",
+        explanation: "O Egito está localizado no nordeste da África e é famoso por sua história antiga, incluindo as pirâmides e os faraós."
     },
     {
-        ask: "",
+        ask: "Qual é a fórmula química da água?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "H2O",
+            "CO2",
+            "O2",
+            "NaCl"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
+        answer: "H2O",
+        explanation: "A água é quimicamente composta por duas moléculas de hidrogênio (H) e uma de oxigênio (O), ou seja, H2O."
     },
     {
-        ask: "",
+        ask: "Quem pintou a Mona Lisa?",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Vincent van Gogh",
+            "Pablo Picasso",
+            "Leonardo da Vinci",
+            "Claude Monet"
         ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-    {
-        ask: "",
-        options: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        answar: "",
-        explanation: "",
-        level: "",
-    },
-
+        answer: "Leonardo da Vinci",
+        explanation: "A Mona Lisa foi pintada por Leonardo da Vinci no início do século XVI e é uma das obras de arte mais famosas do mundo."
+    }
 ]
