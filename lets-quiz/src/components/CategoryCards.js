@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const CategoryCards = ({cardName, cardColor, cardImg}) => {
 
 return(
-<div style={{width: "500px", height: "500px", backgroundColor: {cardColor}}}>
-    <img src={cardImg} alt={cardName + "icon"}></img>
-    <Link>{cardName}</Link>
+<div style={{width: "300px", height: "300px", backgroundColor:`${cardColor}`, margin:"10px"}}>
+    <img src={cardImg} alt={cardName + "icon"} style={{width: "80px", height: "80px"}} ></img>
+    <Link to={cardName}>{cardName}</Link>
 </div>
 
 )
