@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 
-const QuestionsCard = ({listQuestions, sizeList, level}) => {
+const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
@@ -51,7 +51,7 @@ const QuestionsCard = ({listQuestions, sizeList, level}) => {
         } else if (score > 0 && score <= 50) {
             setResultMessage("Bom trabalho! Você acertou algumas perguntas. Dá pra ver que você tem um bom conhecimento, mas ainda há espaço para melhorar. Continue praticando e da próxima vez tenho certeza de que você pode alcançar uma pontuação ainda maior!")
         } else {
-            setResultMessage("Parabéns! Você teve um excelente desempenho! Seu conhecimento de cinema é realmente impressionante. Continue assim, e se desafie com perguntas ainda mais difíceis para expandir ainda mais suas habilidades!")
+            setResultMessage(`Parabéns! Você teve um excelente desempenho! Seus conhecimento sobre ${quizTheme} é realmente impressionante. Continue assim, e se desafie com perguntas ainda mais difíceis para expandir ainda mais suas habilidades!`)
         }
     }
 

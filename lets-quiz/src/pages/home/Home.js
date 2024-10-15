@@ -4,7 +4,7 @@ import CategoryCards from '../../components/CategoryCards';
 const Home = () => {
 
 return(
-<div>
+<div className='div-container'>
     <h2>Escolha uma categoria</h2>
 
     <ul>

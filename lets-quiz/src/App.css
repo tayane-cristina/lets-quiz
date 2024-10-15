@@ -1,38 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+
 .App {
   text-align: center;
+  font-family: "DM Sans";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Estilos gerais*/
+
+
+/*Estilos para a div princiap*/
+.div-container{
+  color: rgb(70, 70, 240);
+
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1024px) {
+    .div-container{
+      width: 100%;
+      margin: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      margin-top: 8rem;
+    }
+
+    .div-container h2{
+      font-size: 3rem;
+    }
+
+    .div-container ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      height: auto;
+      width: 40%;
+    }
+
+    .div-container ul li{
+      list-style: none;
+      padding: 10px;
+      margin: 20px;
+      width: 16rem;
+      height: 15rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      
+    }
+}
+
+/*Estilos para os cards de categorias*/
+.card-container {
+ 
+  
+}
+
+@media (min-width: 1024px) {
+  .card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 10px;
+  }
+
+  .card-container a{
+    text-decoration: none;
+    color: black;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Estilos para a sessão que exibe as perguntas*/
+.sectionContainer{
+
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 1024px) {
+  .section-container{
+
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Estilos para o ícone dentro do card de categorias*/
+.img-icon{
+
+}
+@media (min-width: 1024px) {
+  .img-icon{
+    width: 70px;
+    height: 70px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+
+.btn-primary{
+
+}
+
+.btn-secondary{
+
+  
+}
+
+.btn-light{
+
+ 
 }
