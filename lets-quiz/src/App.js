@@ -8,10 +8,13 @@ import Music from './pages/Music';
 import Books from './pages/Books';
 import Hobbies from './pages/Hobbies';
 import Generals from './pages/Generals';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <BrowserRouter>
+     <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/cinema' element={<Cinema />}></Route>
@@ -20,6 +23,7 @@ function App() {
         <Route path='/hobbies' element={<Hobbies />}></Route>
         <Route path='/trivia' element={<Generals />}></Route>
       </Routes>
+      <Footer />
 
     </BrowserRouter>
    

@@ -7,7 +7,7 @@ export const musicListQuestions = [
             "Little Richard",
             "Buddy Holly"
         ],
-        answer: "Elvis Presley",
+        answar: "Elvis Presley",
         explanation: "Elvis Presley é amplamente conhecido como o 'Rei do Rock' por seu papel fundamental na popularização do rock and roll nos anos 1950."
     },
     {

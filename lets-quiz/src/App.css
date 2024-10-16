@@ -19,15 +19,57 @@ h2{
   font-size: 35px;
 }
 
+
+
 /*Estilos gerais*/
 
 
-/*Estilos para a div princiap*/
+/*Estilos para a div princiapal*/
+/*Telas menores*/
 .div-container{
   color: rgb(70, 70, 240);
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
 
+.div-container p{
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  color: #0a0a0a8c;
+}
+
+.div-container ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  height: auto;
+  background-color: violet;
+}
+
+.div-container ul li{
+  list-style: none;
+  width: 100%;
+  height: 3rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+/*div-container telas maiores*/
 @media (min-width: 1024px) {
     .div-container{
       width: 100%;
@@ -38,6 +80,15 @@ h2{
       justify-content: space-around;
       align-items: center;
       padding: 10px;
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+    .div-container p {
+      text-align: center;
+      width: 80rem;
+      font-size: 25px;
+      color: #0a0a0a8c;
     }
 
     .div-container h2{
@@ -62,7 +113,7 @@ h2{
       width: 16rem;
       height: 15rem;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
       
@@ -70,11 +121,27 @@ h2{
 }
 
 /*Estilos para os cards de categorias*/
+/*Telas menores*/
 .card-container {
- 
-  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.137);
+  border: 3px solid rgb(70, 70, 240);
+  transition: 0.5s ease;
 }
 
+.card-container a{
+  text-decoration: none;
+  color: rgb(70, 70, 240);
+}
+
+/*Telas maiores*/
 @media (min-width: 1024px) {
   .card-container{
     width: 100%;
@@ -102,7 +169,14 @@ h2{
 
 /*Estilos para a sessão que exibe as perguntas*/
 .sectionContainer{
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 45rem;
+  margin: auto;
+  
 }
 
 @media (min-width: 1024px) {
@@ -112,6 +186,7 @@ h2{
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    height: 45rem;
     margin: auto;
   }
 
@@ -124,6 +199,7 @@ h2{
     border-radius: 10px;
     padding: 30px; 
     width: 50%;
+    margin-bottom: 8rem;
   }
 
   .section-container ul p{
@@ -155,34 +231,39 @@ h2{
 
   @media (min-width: 1024px) {
     .section-finaly-container{
-      background-color: rgba(128, 128, 128, 0.226);
+      background-color: rgba(128, 128, 128, 0.178);
       width: 70%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      margin-top: 3rem;
       padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 10rem;
     }
 
     .section-finaly-container p{
       text-align: center;
-      font-size: 20px;
+      font-size: 25px;
     }
 
     .section-finaly-container section{
-      padding: 10px;
       width: 30%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-items: center;
+      padding: 10px;
     }
 
   }
 /*Estilos para o ícone dentro do card de categorias*/
 .img-icon{
-
+  width: 90rem;
+  height: 60px;
+  transition: 0.5s ease;
+  color: blue
 }
 @media (min-width: 1024px) {
   .img-icon{
@@ -244,6 +325,20 @@ h2{
 .btn-light:hover{
   background-color: #e2e6ea;  /* Fundo cinza claro ao passar o mouse */
   color: #212529; 
+}
+
+.header-content{
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 /*Animações*/

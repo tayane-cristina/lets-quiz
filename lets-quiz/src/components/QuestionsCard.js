@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect } from 'react';
 import { useState } from 'react';
-import { BtnHome } from './btn/Home';
+import { BtnHome } from './btn/BtnHome';
 import { Link } from 'react-router-dom';
 
 const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
@@ -12,20 +12,23 @@ const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
     const [score, setScore ] = useState(0);
     const [quizFinished, setQuizFinished] = useState(false)
     const [resultMessage, setResultMessage] = useState("")
+    const [explain, setExplain] = useState(null);
 
     /*Função que verifica se o usuário respondeu corretamente*/
-    const userResponse = (option, correctAnswar) => {
+    const userResponse = (option, correctAnswar, explain) => {
         setSelectedOption(option)
         setIsAnswared(true)
 
         if (option === correctAnswar) {
-            setFeedback("Acertou!")
+            setFeedback("Resposta correta!")
+            setExplain(explain)
             setScore((prevScore) => prevScore + 10)
         } else {
-            setFeedback(`Errou, a resposta correta é ${correctAnswar}`)
+            setFeedback(`Resposta errada, a resposta correta é ${correctAnswar}`)
+            setExplain(explain)
         }
     }
-
+   
     /*Função que passa para a próxima pergunta */
     const nextQuestion = () => {
         if (currentQuestion < sizeList - 1) {
@@ -33,6 +36,7 @@ const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
             setFeedback("")
             setSelectedOption(null)
             setIsAnswared(false)
+            setExplain(null)
         } else {
             setQuizFinished(true)
         }
@@ -45,7 +49,7 @@ const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
         } else if (score > 0 && score <= 50) {
             setResultMessage("Bom trabalho! Você acertou algumas perguntas. Dá pra ver que você tem um bom conhecimento, mas ainda há espaço para melhorar. Continue praticando e da próxima vez tenho certeza de que você pode alcançar uma pontuação ainda maior!")
         } else {
-            setResultMessage(`Parabéns! Você teve um excelente desempenho! Seus conhecimento sobre ${quizTheme} é realmente impressionante. Continue assim, e se desafie com perguntas ainda mais difíceis para expandir ainda mais suas habilidades!`)
+            setResultMessage(`Parabéns! Você teve um excelente desempenho! Seu conhecimento sobre ${quizTheme} é realmente impressionante. Continue assim, e se desafie com perguntas ainda mais difíceis para expandir ainda mais suas habilidades!`)
         }
     }
 )
@@ -71,7 +75,7 @@ return(
             {listQuestions[currentQuestion].options.map((opt, index) => (
                 <li 
                 key={index}
-                onClick={() => !isAnswared && userResponse(opt, listQuestions[currentQuestion].answar)}
+                onClick={() => !isAnswared && userResponse(opt, listQuestions[currentQuestion].answar, listQuestions[currentQuestion].explanation)}
                 style={{
                     fontWeight: selectedOption === opt ? "bold" : "normal",
                     cursor: isAnswared ? "not-allowed" : "pointer",
@@ -82,12 +86,13 @@ return(
                 </li>
             ))}
             <p>{feedback}</p>
+            <p style={{textAlign:"center"}}>{explain}</p>
             <button className='btn-primary' onClick={nextQuestion}>Próxima</button>
         </ul>
         ) : (
             <div className='section-finaly-container'>
                 <p><strong>Quiz finalizado!</strong></p>
-                <p>Seu score é de <strong>{score}</strong></p>
+                <p>Seu score é de <strong>{score}/100</strong></p>
         
                 <p>{resultMessage}</p>
                 <section className='btn-finaly-page'>
