@@ -1,18 +1,51 @@
 import React from 'react';
-import CategoryCards from '../../components/CategoryCards';
+import { Link } from 'react-router-dom';
+import { FaFilm, FaMusic, FaBook, FaCamera, FaStar } from "react-icons/fa";
 
 const Home = () => {
 
+    const categories = [
+        {
+            icon: FaFilm,
+            link: "cinema",
+            title: "Cinema",
+        },
+        {
+            icon: FaMusic,
+            link: "music",
+            title: "Música",
+        },
+        {
+            icon: FaBook,
+            link: "Books",
+            title: "Livros",
+        },
+        {
+            icon: FaCamera,
+            link: "Hobbies",
+            title: "Hobbies",
+        },
+        {
+            icon: FaStar,
+            link: "trivia",
+            title: "Trivial",
+        },
+    ]
+
+    categories.map((categorie,index) => console.log(categorie.icon))
+
 return(
 <div className='div-container'>
+    <h1><Link to="/">Lets Quiz!</Link></h1>
     <h2>Escolha uma categoria</h2>
 
     <ul>
-        <li><CategoryCards cardColor="yellow" cardImg="https://img.icons8.com/?size=50&id=2791&format=png" cardName="Cinema"/></li>
-        <li><CategoryCards cardColor="darkBlue" cardImg="https://img.icons8.com/?size=50&id=9403&format=png" cardName="Music"/></li>
-        <li><CategoryCards cardColor="purple" cardImg="https://img.icons8.com/?size=50&id=23663&format=png" cardName="Books"/></li>
-        <li><CategoryCards cardColor="orange" cardImg="https://img.icons8.com/?size=50&id=HaIBVDvtZ8H7&format=png" cardName="Hobbies"/></li>
-        <li><CategoryCards cardColor="gray" cardImg="https://img.icons8.com/?size=50&id=43440&format=png" cardName="Generals"/></li>
+        {categories.map((categorie, index) => (
+            <li key={index} className='card-container'>
+                <categorie.icon className='img-icon'/>
+                <Link to={`/${categorie.link}`}>{categorie.title}</Link>
+            </li>
+        ))}
     </ul>
 </div>
 

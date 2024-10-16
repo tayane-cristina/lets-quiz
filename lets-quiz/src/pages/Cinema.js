@@ -5,11 +5,12 @@ import { CinemaListQuestions } from '../data/CinemaListQuestions';
 
 const Cinema = () => {
 
+    const [quizTheme] = useState("Cinema")
 return(
 <div className='principal-div'>
     <h2>Cinema</h2>
 
-    <QuestionsCard  listQuestions={CinemaListQuestions} sizeList={CinemaListQuestions.length}/>
+    <QuestionsCard  listQuestions={CinemaListQuestions} quizTheme={quizTheme} sizeList={CinemaListQuestions.length}/>
 </div>
 
 )

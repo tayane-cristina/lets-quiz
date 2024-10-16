@@ -8,7 +8,7 @@ export const generalListQuestions = [
             "Paris",
             "Lisboa"
         ],
-        answer: "Paris",
+        answar: "Paris",
         explanation: "A capital da França é Paris, conhecida por sua rica história, cultura e monumentos icônicos como a Torre Eiffel."
     },
     {
@@ -19,7 +19,7 @@ export const generalListQuestions = [
             "Mark Twain",
             "Jane Austen"
         ],
-        answer: "William Shakespeare",
+        answar: "William Shakespeare",
         explanation: "*Hamlet* é uma das tragédias mais famosas de William Shakespeare, escrita no início do século XVII."
     },
     {
@@ -30,7 +30,7 @@ export const generalListQuestions = [
             "Ósmio",
             "Cobre"
         ],
-        answer: "Oxigênio",
+        answar: "Oxigênio",
         explanation: "O símbolo 'O' representa o oxigênio, um elemento vital para a respiração e a vida na Terra."
     },
     {
@@ -41,7 +41,7 @@ export const generalListQuestions = [
             "Júpiter",
             "Saturno"
         ],
-        answer: "Júpiter",
+        answar: "Júpiter",
         explanation: "Júpiter é o maior planeta do Sistema Solar, conhecido por suas grandes tempestades e por ter um sistema de anéis."
     },
     {
@@ -52,7 +52,7 @@ export const generalListQuestions = [
             "Iene",
             "Won"
         ],
-        answer: "Iene",
+        answar: "Iene",
         explanation: "O iene (JPY) é a moeda oficial do Japão e é uma das principais moedas do mundo."
     },
     {
@@ -63,7 +63,7 @@ export const generalListQuestions = [
             "Buzz Aldrin",
             "John Glenn"
         ],
-        answer: "Neil Armstrong",
+        answar: "Neil Armstrong",
         explanation: "Neil Armstrong foi o primeiro homem a pisar na Lua em 20 de julho de 1969 durante a missão Apollo 11."
     },
     {
@@ -74,7 +74,7 @@ export const generalListQuestions = [
             "Espanhol",
             "Árabe"
         ],
-        answer: "Mandarim",
+        answar: "Mandarim",
         explanation: "O mandarim é a língua mais falada do mundo, com mais de um bilhão de falantes nativos, principalmente na China."
     },
     {
@@ -85,7 +85,7 @@ export const generalListQuestions = [
             "Europa",
             "América"
         ],
-        answer: "África",
+        answar: "África",
         explanation: "O Egito está localizado no nordeste da África e é famoso por sua história antiga, incluindo as pirâmides e os faraós."
     },
     {
@@ -96,7 +96,7 @@ export const generalListQuestions = [
             "O2",
             "NaCl"
         ],
-        answer: "H2O",
+        answar: "H2O",
         explanation: "A água é quimicamente composta por duas moléculas de hidrogênio (H) e uma de oxigênio (O), ou seja, H2O."
     },
     {
@@ -107,7 +107,7 @@ export const generalListQuestions = [
             "Leonardo da Vinci",
             "Claude Monet"
         ],
-        answer: "Leonardo da Vinci",
+        answar: "Leonardo da Vinci",
         explanation: "A Mona Lisa foi pintada por Leonardo da Vinci no início do século XVI e é uma das obras de arte mais famosas do mundo."
     }
 ]

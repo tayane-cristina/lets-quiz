@@ -1,5 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { useState } from 'react';
+import { BtnHome } from './btn/Home';
+import { Link } from 'react-router-dom';
 
 const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
 
@@ -36,15 +38,7 @@ const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
         }
     }
 
-    /*Função que envia mensagem de fim de jogo */
-    useEffect(() => {
-        if (quizFinished) {
-            finishQuiz(score)
-        }
-    }, [quizFinished, score])
-
-
-    const finishQuiz = (score) => {
+    const finishQuiz = useCallback((score) => {
         
         if (score === 0) {
             setResultMessage("Que pena, você não acertou nenhuma pergunta desta vez! Mas não desanime! Aproveite essa oportunidade para aprender e melhorar. Tente de novo e continue explorando seus conhecimentos. Quem sabe na próxima rodada você se sai muito melhor!")
@@ -54,6 +48,7 @@ const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
             setResultMessage(`Parabéns! Você teve um excelente desempenho! Seus conhecimento sobre ${quizTheme} é realmente impressionante. Continue assim, e se desafie com perguntas ainda mais difíceis para expandir ainda mais suas habilidades!`)
         }
     }
+)
 
     /*Função que reinicia o quiz*/
     const reset = () => {
@@ -61,11 +56,18 @@ const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
         setCurrentQuestion(0)
     }
 
+    /*Função que envia mensagem de fim de jogo */
+    useEffect(() => {
+        if (quizFinished) {
+            finishQuiz(score)
+        }
+    }, [quizFinished, score, finishQuiz ])
+
 return(
-    <div>
+    <div className='section-container'>
         {!quizFinished ? (
-            <ol>
-            <legend>Pergunta {currentQuestion + 1}/{sizeList} - {listQuestions[currentQuestion].ask}</legend>
+            <ul>
+            <p>Pergunta {currentQuestion + 1}/{sizeList} - {listQuestions[currentQuestion].ask}</p>
             {listQuestions[currentQuestion].options.map((opt, index) => (
                 <li 
                 key={index}
@@ -80,16 +82,19 @@ return(
                 </li>
             ))}
             <p>{feedback}</p>
-            <button onClick={nextQuestion}>Próxima</button>
-        </ol>
+            <button className='btn-primary' onClick={nextQuestion}>Próxima</button>
+        </ul>
         ) : (
-            <div>
-            <p><strong>Quiz finalizado!</strong></p>
-            <p>Seu score é de <strong>{score}</strong></p>
-    
-            <p>{resultMessage}</p>
-            <button onClick={() => reset()}>Tentar novamente</button>
-        </div>
+            <div className='section-finaly-container'>
+                <p><strong>Quiz finalizado!</strong></p>
+                <p>Seu score é de <strong>{score}</strong></p>
+        
+                <p>{resultMessage}</p>
+                <section className='btn-finaly-page'>
+                    <button className='btn-secondary' onClick={() => reset()}>Tentar novamente</button>
+                    <Link to='/' className='btn-light'>Voltar a página inicial</Link>
+                </section>
+            </div>
         )}
     </div>
     )

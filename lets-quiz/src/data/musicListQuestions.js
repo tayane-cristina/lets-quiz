@@ -18,7 +18,7 @@ export const musicListQuestions = [
             "The Dark Side of the Moon",
             "Todos os anteriores"
         ],
-        answer: "Todos os anteriores",
+        answar: "Todos os anteriores",
         explanation: "Todos esses álbuns são considerados clássicos do rock e tiveram um impacto significativo na música e na cultura popular."
     },
     {
@@ -29,7 +29,7 @@ export const musicListQuestions = [
             "Wolfgang Amadeus Mozart",
             "Frédéric Chopin"
         ],
-        answer: "Ludwig van Beethoven",
+        answar: "Ludwig van Beethoven",
         explanation: "Ludwig van Beethoven compôs a 'Nona Sinfonia' em 1824, que inclui o famoso 'Ode à Alegria'."
     },
     {
@@ -40,7 +40,7 @@ export const musicListQuestions = [
             "Beyoncé",
             "Rihanna"
         ],
-        answer: "Adele",
+        answar: "Adele",
         explanation: "Adele lançou o álbum '21' em 2011, que contém sucessos como 'Rolling in the Deep' e 'Someone Like You'."
     },
     {
@@ -51,7 +51,7 @@ export const musicListQuestions = [
             "Coachella",
             "Woodstock"
         ],
-        answer: "Woodstock",
+        answar: "Woodstock",
         explanation: "O festival de Woodstock, realizado pela primeira vez em 1969, se tornou um ícone da contracultura e do movimento hippie."
     },
     {
@@ -62,7 +62,7 @@ export const musicListQuestions = [
             "Led Zeppelin",
             "Pink Floyd"
         ],
-        answer: "The Beatles",
+        answar: "The Beatles",
         explanation: "The Beatles é uma das bandas mais influentes da história da música, conhecida por suas inovações musicais e letras impactantes."
     },
     {
@@ -73,7 +73,7 @@ export const musicListQuestions = [
             "Reggae",
             "Blues"
         ],
-        answer: "Reggae",
+        answar: "Reggae",
         explanation: "O reggae é um gênero musical que se originou na Jamaica nos anos 1960 e é frequentemente associado ao músico Bob Marley."
     },
     {
@@ -84,7 +84,7 @@ export const musicListQuestions = [
             "Ed Sheeran",
             "Usher"
         ],
-        answer: "Justin Timberlake",
+        answar: "Justin Timberlake",
         explanation: "Justin Timberlake ganhou um Grammy por seu álbum 'FutureSex/LoveSounds', lançado em 2006, que contém hits como 'SexyBack' e 'My Love'."
     },
     {
@@ -95,7 +95,7 @@ export const musicListQuestions = [
             "Prince",
             "Elton John"
         ],
-        answer: "Prince",
+        answar: "Prince",
         explanation: "Prince é frequentemente chamado de 'Príncipe do Pop' por sua influência na música pop e suas inovações estilísticas."
     },
     {
@@ -106,7 +106,7 @@ export const musicListQuestions = [
             "Guitarra",
             "Trompete"
         ],
-        answer: "Guitarra",
+        answar: "Guitarra",
         explanation: "A guitarra é um instrumento de corda que pode ser tocado de diversas maneiras e é amplamente utilizado em muitos gêneros musicais."
     }
 ]

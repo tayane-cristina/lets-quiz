@@ -9,7 +9,7 @@ const Generals = () => {
 
 return(
 <div>
-    <h2>Gerais</h2>
+    <h2>Trivial</h2>
 
     <QuestionsCard  listQuestions={generalListQuestions} quizTheme={quizTheme} sizeList={generalListQuestions.length}/>
 </div>

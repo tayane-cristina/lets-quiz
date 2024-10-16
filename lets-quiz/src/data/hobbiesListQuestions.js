@@ -8,7 +8,7 @@ export const hobbiesListQuestions = [
             "Colecionar selos",
             "Caminhada"
         ],
-        answer: "Colecionar selos",
+        answar: "Colecionar selos",
         explanation: "Colecionar selos é um hobby de coleta que envolve juntar selos postais de diferentes países e épocas."
     },
     {
@@ -19,7 +19,7 @@ export const hobbiesListQuestions = [
             "Ciclismo",
             "Natação"
         ],
-        answer: "Pintura",
+        answar: "Pintura",
         explanation: "A pintura é um hobby que permite aos indivíduos expressarem suas emoções e criatividade através das artes visuais."
     },
     {
@@ -30,7 +30,7 @@ export const hobbiesListQuestions = [
             "Programação",
             "Cozinhar"
         ],
-        answer: "Yoga",
+        answar: "Yoga",
         explanation: "Yoga é um hobby que combina exercício físico e meditação, promovendo tanto a saúde física quanto a mental."
     },
     {
@@ -41,7 +41,7 @@ export const hobbiesListQuestions = [
             "Pintura",
             "Escrever"
         ],
-        answer: "Caminhadas",
+        answar: "Caminhadas",
         explanation: "Caminhadas é um hobby popular que permite às pessoas explorarem a natureza e se exercitarem ao ar livre."
     },
     {
@@ -52,7 +52,7 @@ export const hobbiesListQuestions = [
             "Caminhar",
             "Jardinagem"
         ],
-        answer: "Fotografia",
+        answar: "Fotografia",
         explanation: "Fotografia envolve capturar imagens digitais e pode ser uma forma de criar e compartilhar conteúdo visual."
     },
     {
@@ -63,7 +63,7 @@ export const hobbiesListQuestions = [
             "Ciclismo",
             "Caminhar"
         ],
-        answer: "Dança",
+        answar: "Dança",
         explanation: "A dança é frequentemente praticada em grupos e é uma atividade social popular em festas e eventos."
     },
     {
@@ -74,7 +74,7 @@ export const hobbiesListQuestions = [
             "Leitura",
             "Escrita"
         ],
-        answer: "Yoga",
+        answar: "Yoga",
         explanation: "Yoga é uma prática que combina posturas físicas, respiração e meditação, promovendo relaxamento e bem-estar."
     },
     {
@@ -85,7 +85,7 @@ export const hobbiesListQuestions = [
             "Pintura",
             "Todos os anteriores"
         ],
-        answer: "Todos os anteriores",
+        answar: "Todos os anteriores",
         explanation: "Todos os hobbies listados (jardinagem, cozinhar e pintura) podem ser realizados em casa e envolvem a manipulação de materiais."
     },
     {
@@ -96,7 +96,7 @@ export const hobbiesListQuestions = [
             "Caminhadas",
             "Cozinhar"
         ],
-        answer: "Programação",
+        answar: "Programação",
         explanation: "Programação é um hobby que envolve o uso de tecnologia e pode ser uma forma criativa de resolver problemas e construir projetos."
     },
     {
@@ -107,7 +107,7 @@ export const hobbiesListQuestions = [
             "Escrita",
             "Cozinhar"
         ],
-        answer: "Cozinhar",
+        answar: "Cozinhar",
         explanation: "Cozinhar envolve habilidades manuais e a criação de pratos, sendo uma forma de expressão pessoal e cultura."
     }
 ]
