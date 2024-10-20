@@ -12,6 +12,7 @@ a{
 
 h1{
   font-size: 50px;
+  animation: pulse 1.5s infinite;
 }
 
 h2{
@@ -123,61 +124,96 @@ h2{
 /*Estilos para os cards de categorias*/
 /*Telas menores*/
 .card-container {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-size: 25px;
+  font-size: 35px;
   border-radius: 10px;
-  background-color: rgba(228, 10, 10, 0.137);
-  border: 3px solid rgb(70, 70, 240);
+  border: 5px solid rgb(70, 70, 240);
   transition: 0.5s ease;
+  padding: 25px;
+  margin: 15px;
 }
 
-.card-container a{
+.card-container p{
   text-decoration: none;
   color: rgb(70, 70, 240);
+  font-weight: bold;
+  animation: rotate 1.5 infinite;
 }
 
 /*Telas maiores*/
 @media (min-width: 1024px) {
   .card-container{
-    width: 100%;
-    height: 100%;
+    width: 30%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-size: 35px;
     border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.137);
     border: 5px solid rgb(70, 70, 240);
     transition: 0.5s ease;
+    padding: 25px;
+    margin: 15px;
   }
 
   .card-container:hover {
     
   }
 
-  .card-container a{
+  .card-container p{
     text-decoration: none;
     color: rgb(70, 70, 240);
+    font-weight: bold;
   }
 }
 
 /*Estilos para a sessão que exibe as perguntas*/
-.sectionContainer{
+.section-container{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 45rem;
+  height: auto;
   margin: auto;
-  
 }
+
+.section-container ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(207, 202, 207, 0.308);
+  border-radius: 10px;
+  padding: 30px; 
+  width: 70%;
+  height: auto;
+  margin-bottom: 8rem;
+}
+
+.section-container ul p{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.section-container ul li{
+  padding: 5px;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  font-size: 22px;
+  background-color: rgba(94, 93, 93, 0.123);
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
 
 @media (min-width: 1024px) {
   .section-container{
@@ -226,7 +262,31 @@ h2{
 }
 
   .section-finaly-container{
-    
+    background-color: rgba(128, 128, 128, 0.178);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10rem;
+  }
+
+  .section-finaly-container p{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .section-finaly-container section{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
   }
 
   @media (min-width: 1024px) {

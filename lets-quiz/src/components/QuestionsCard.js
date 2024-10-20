@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
 import { useState } from 'react';
-import { BtnHome } from './btn/BtnHome';
 import { Link } from 'react-router-dom';
 
 const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
@@ -65,7 +64,7 @@ const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
         if (quizFinished) {
             finishQuiz(score)
         }
-    }, [quizFinished, score, finishQuiz ])
+    }, [quizFinished, score, finishQuiz])
 
 return(
     <div className='section-container'>

@@ -46,10 +46,11 @@ return(
 
     <ul>
         {categories.map((categorie, index) => (
-            <li key={index} className='card-container'>
+            <Link key={index} to={`/${categorie.link}`} className='card-container'>
                 <categorie.icon className='img-icon'/>
-                <Link to={`/${categorie.link}`}>{categorie.title}</Link>
-            </li>
+                <p>{categorie.link}</p>
+            </Link>
+            
         ))}
     </ul>
 </div>
