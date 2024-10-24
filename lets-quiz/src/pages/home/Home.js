@@ -50,7 +50,6 @@ return(
                 <categorie.icon className='img-icon'/>
                 <p>{categorie.link}</p>
             </Link>
-            
         ))}
     </ul>
 </div>

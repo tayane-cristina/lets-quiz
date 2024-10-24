@@ -160,16 +160,18 @@ h2{
     transition: 0.5s ease;
     padding: 25px;
     margin: 15px;
+    box-shadow: 5px 8px 7px rgb(82, 81, 81);
   }
 
   .card-container:hover {
-    
+    background-color: rgb(226, 222, 222);
   }
 
   .card-container p{
     text-decoration: none;
     color: rgb(70, 70, 240);
     font-weight: bold;
+    width: 100%;
   }
 }
 
@@ -212,6 +214,7 @@ h2{
   background-color: rgba(94, 93, 93, 0.123);
   border-radius: 10px;
   transition: 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
@@ -253,7 +256,7 @@ h2{
     background-color: rgba(94, 93, 93, 0.123);
     border-radius: 10px;
     transition: 0.5s ease;
-  }
+  };
 
   .section-container ul li:hover {
     background-color: #007bff;
