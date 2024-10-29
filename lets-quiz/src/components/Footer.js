@@ -4,7 +4,7 @@ const Footer = () => {
 
 return(
     <footer className="footer">
-      © 2024 Tayane Cristina. Todos os direitos reservados.
+      <p>© 2024 Tayane Cristina. Todos os direitos reservados.</p>
     </footer>
 
 )

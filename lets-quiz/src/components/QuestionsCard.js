@@ -70,25 +70,25 @@ return(
     <div className='section-container'>
         {!quizFinished ? (
             <ul>
-            <p>Pergunta {currentQuestion + 1}/{sizeList} - {listQuestions[currentQuestion].ask}</p>
-            {listQuestions[currentQuestion].options.map((opt, index) => (
-                <li 
-                key={index}
-                onClick={() => !isAnswared && userResponse(opt, listQuestions[currentQuestion].answar, listQuestions[currentQuestion].explanation)}
-                style={{
-                    fontWeight: selectedOption === opt ? "bold" : "normal",
-                    cursor: isAnswared ? "not-allowed" : "pointer",
-                    color: isAnswared ? "gray" : "black",
-                }}
-                >
-                {opt}
-                </li>
-            ))}
-            <p>{feedback}</p>
-            <p style={{textAlign:"center"}}>{explain}</p>
-            <button className='btn-primary' onClick={nextQuestion}>Próxima</button>
-        </ul>
-        ) : (
+                <p>Pergunta {currentQuestion + 1}/{sizeList} - {listQuestions[currentQuestion].ask}</p>
+                {listQuestions[currentQuestion].options.map((opt, index) => (
+                    <li 
+                    key={index}
+                    onClick={() => !isAnswared && userResponse(opt, listQuestions[currentQuestion].answar, listQuestions[currentQuestion].explanation)}
+                    style={{
+                        fontWeight: selectedOption === opt ? "bold" : "normal",
+                        cursor: isAnswared ? "not-allowed" : "pointer",
+                        color: isAnswared ? "gray" : "black",
+                    }}
+                    >
+                    <p>{opt}</p>
+                    </li>
+                ))}
+                <p>{feedback}</p>
+                <p style={{textAlign:"center"}}>{explain}</p>
+                <button className='btn-primary' onClick={nextQuestion}>Próxima</button>
+            </ul>
+            ) : (
             <div className='section-finaly-container'>
                 <p><strong>Quiz finalizado!</strong></p>
                 <p>Seu score é de <strong>{score}/100</strong></p>

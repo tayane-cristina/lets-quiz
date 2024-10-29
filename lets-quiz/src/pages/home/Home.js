@@ -39,16 +39,14 @@ return(
     <h2>Escolha uma categoria</h2>
     <p>
         Você está pronto para testar seus conhecimentos e se divertir ao mesmo tempo? Então lets quiz, descubra o quanto você realmente 
-        sabe! São perguntas desafiadoras e curiosidades que vão te surpreender. E o melhor: você pode jogar quantas vezes quiser!
-        Chame seus amigos e veja quem é o verdadeiro mestre das respostas. Será que você consegue acertar todas?
-        Não fique de fora! Escolha uma categoria e comece o desafio!
+        sabe! São perguntas desafiadoras e curiosidades que vão te surpreender. Será que você consegue acertar todas? Escolha uma categoria e comece o desafio!
     </p>
 
     <ul>
         {categories.map((categorie, index) => (
             <Link key={index} to={`/${categorie.link}`} className='card-container'>
                 <categorie.icon className='img-icon'/>
-                <p>{categorie.link}</p>
+                <p>{categorie.title}</p>
             </Link>
         ))}
     </ul>
