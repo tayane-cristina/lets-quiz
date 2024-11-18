@@ -100,14 +100,14 @@ export const CinemaListQuestions = [
         explanation: "Toy Story (1995) foi o primeiro longa-metragem totalmente animado por computador e é protagonizado por Woody e Buzz Lightyear, dois brinquedos que ganham vida.",
     },
     {
-        ask: "Qual filme foi o primeiro da trilogia O Senhor dos Anéis?",
+        ask: "Qual filme ganhou o Oscar de Melhor Filme em 1994?",
         options: [
-            "O Senhor dos Anéis: As Duas Torres",
-            "O Senhor dos Anéis: O Retorno do Rei",
-            "O Senhor dos Anéis: A Sociedade do Anel",
-            "O Hobbit: Uma Jornada Inesperada"
+            "Forrest Gump",
+            "Pulp Fiction",
+            "O Rei Leão",
+            "A Lista de Schindler"
         ],
-        answar: "O Hobbit: Uma Jornada Inesperada",
-        explanation: "A Sociedade do Anel (2001) é o primeiro filme da trilogia baseada na obra de J.R.R. Tolkien, dirigida por Peter Jackson.",
-    },
+        answer: "Forrest Gump",
+        explanation: "Forrest Gump venceu o Oscar de Melhor Filme em 1994. O filme, dirigido por Robert Zemeckis e estrelado por Tom Hanks, foi amplamente aclamado pela crítica e se tornou um grande sucesso de bilheteira. Ele também ganhou outros prêmios importantes, incluindo Melhor Diretor e Melhor Ator para Tom Hanks."
+    }
 ]

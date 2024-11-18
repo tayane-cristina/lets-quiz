@@ -1,0 +1,82 @@
+.div-container{
+    height: 100vh;
+    width: 100%;
+
+}
+
+.div-container-main{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text{
+    width: 80%;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Para tablets, de 600px a 1024px (telas pequenas a médias) */
+@media (min-width: 600px) {
+    .div-container{
+
+    }
+
+    .div-container-main{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-container-h2{
+        font-size: 32px;
+    }
+
+    .div-container-h2{
+        font-size: 35px;
+    }
+
+    .intro-text{
+        width: 70%;
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+   
+}
+
+
+/* Para desktops, de 1024px a 1440px (telas grandes) */
+@media (min-width: 1024px) {
+    .div-container{
+
+    }
+
+    .div-container-main{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-container-h2{
+        font-size: 38px;
+    }
+
+    .intro-text{
+        width: 50%;
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
