@@ -10,26 +10,31 @@ const Home = () => {
             icon: FaFilm,
             link: "cinema",
             title: "Cinema",
+            background: "mediumseagreen"
         },
         {
             icon: FaMusic,
             link: "music",
             title: "Música",
+            background: "deepskyblue"
         },
         {
             icon: FaBook,
             link: "Books",
             title: "Livros",
+            background: "darkorange"
         },
         {
             icon: FaCamera,
             link: "Hobbies",
             title: "Hobbies",
+            background: "red"
         },
         {
             icon: FaStar,
             link: "trivia",
             title: "Trivial",
+            background: "darkorchid"
         },
     ]
 
@@ -42,11 +47,16 @@ const Home = () => {
                 sabe! São perguntas desafiadoras e curiosidades que vão te surpreender. Será que você consegue acertar todas? Escolha uma categoria e comece o desafio!
             </p>
 
-            <ul>
+            <ul className='div-container-ul-cards'>
                 {categories.map((categorie, index) => (
-                    <Link key={index} to={`/${categorie.link}`} className='card-container'>
+                    <Link 
+                        key={index} 
+                        to={`/${categorie.link}`} 
+                        className='card-container'
+                        style={{backgroundColor: `${categorie.background}`}}
+                    >
                         <categorie.icon className='img-icon'/>
-                        <p>{categorie.title}</p>
+                        <p className='category-text'>{categorie.title}</p>
                     </Link>
                 ))}
             </ul>

@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
+import './QuestionsCard.css'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -67,12 +68,13 @@ const QuestionsCard = ({listQuestions, sizeList, quizTheme}) => {
     }, [quizFinished, score, finishQuiz])
 
 return(
-    <div className='section-container'>
+    <div className='section-container-question'>
         {!quizFinished ? (
-            <ul>
-                <p>Pergunta {currentQuestion + 1}/{sizeList} - {listQuestions[currentQuestion].ask}</p>
+            <ul className='questions-ul-container'>
+                <p className='question'>Pergunta {currentQuestion + 1}/{sizeList} - {listQuestions[currentQuestion].ask}</p>
                 {listQuestions[currentQuestion].options.map((opt, index) => (
                     <li 
+                    className='options-li'
                     key={index}
                     onClick={() => !isAnswared && userResponse(opt, listQuestions[currentQuestion].answar, listQuestions[currentQuestion].explanation)}
                     style={{
@@ -81,12 +83,13 @@ return(
                         color: isAnswared ? "gray" : "black",
                     }}
                     >
-                    <p>{opt}</p>
+                    <p className='options'>{opt}</p>
                     </li>
                 ))}
-                <p>{feedback}</p>
-                <p style={{textAlign:"center"}}>{explain}</p>
+                <p className='feedback'>{feedback}</p>
+                <p className='explain' style={{textAlign:"center"}}>{explain}</p>
                 <button className='btn-primary' onClick={nextQuestion}>Próxima</button>
+                <Link className='give-up-btn' to='/'>Sair</Link>
             </ul>
             ) : (
             <div className='section-finaly-container'>

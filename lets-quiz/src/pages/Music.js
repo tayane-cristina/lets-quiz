@@ -1,6 +1,6 @@
 import React from 'react';
 import { musicListQuestions } from '../data/musicListQuestions';
-import QuestionsCard from '../components/QuestionsCard';
+import QuestionsCard from '../components/questionsCard/QuestionsCard';
 import { useState } from 'react';
 
 const Music = () => {
@@ -9,7 +9,7 @@ const Music = () => {
 
 return(
 <div className='principal-div'>
-    <h2>Musica</h2>
+    <h2 className='category-title-h2'>Musica</h2>
 
     <QuestionsCard  listQuestions={musicListQuestions} quizTheme={quizTheme} sizeList={musicListQuestions.length}/>
 </div>

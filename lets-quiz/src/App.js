@@ -9,7 +9,6 @@ import Books from './pages/Books';
 import Hobbies from './pages/Hobbies';
 import Generals from './pages/Generals';
 import Header from './components/Header';
-import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
           <Route path='/trivia' element={<Generals />}></Route>
         </Routes>
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

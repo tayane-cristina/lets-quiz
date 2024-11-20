@@ -1,7 +1,23 @@
-.div-container{
-    height: 100vh;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 5.5rem;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.title, .div-container-h2, .intro-text{
+    color: rgba(0, 0, 0, 0.664);
+}
+
+.div-container{
+    height: auto;
+    width: 100%;
+    font-family: "Sour Gummy", sans-serif;
 }
 
 .div-container-main{
@@ -14,50 +30,56 @@
 }
 
 .intro-text{
-    width: 80%;
-    font-size: 19px;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
     text-align: center;
     line-height: 1.5;
 }
 
-/* Para tablets, de 600px a 1024px (telas pequenas a médias) */
-@media (min-width: 600px) {
-    .div-container{
-
-    }
-
-    .div-container-main{
-        width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .div-container-h2{
-        font-size: 32px;
-    }
-
-    .div-container-h2{
-        font-size: 35px;
-    }
-
-    .intro-text{
-        width: 70%;
-        font-size: 28px;
-        text-align: center;
-        line-height: 1.5;
-    }
-
-   
+.div-container-ul-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
 }
 
+.card-container{
+    background-color: palegoldenrod;
+    width: 13rem;
+    height: 13rem;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(54, 54, 54, 0) 25px 25px 25px;
+    border: 5px solid rgba(7, 7, 7, 0.253);
+}
 
-/* Para desktops, de 1024px a 1440px (telas grandes) */
-@media (min-width: 1024px) {
+.img-icon{
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.63);
+    animation: pulse 1.5s infinite;
+}
+
+.category-text{
+    font-size: 28px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.877);
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------*/
+/* Para tablets, de 600px a 1024px (telas pequenas a médias) */
+@media (min-width: 600px){
     .div-container{
-
+        height: auto;
     }
 
     .div-container-main{
@@ -74,9 +96,113 @@
     }
 
     .intro-text{
-        width: 50%;
+        width: 60%;
         font-size: 28px;
         text-align: center;
         line-height: 1.5;
+    }
+
+    .div-container-ul-cards{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 8rem;
+    }
+
+    .card-container{
+        background-color: palegoldenrod;
+        width: 12rem;
+        height: 12rem;
+        margin: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: rgba(54, 54, 54, 0.226) 25px 20px 25px;
+        transition: transform 0.5s;
+    }
+
+
+    .card-container:hover{
+        transform: translateX(2px) scale(1.2);
+        
+    }
+
+}
+
+/*------------------------------------------------------*/
+/* Para desktops, de 1024px a 1440px (telas grandes) */
+@media (min-width: 1024px) {
+    .div-container{
+        height: 100vh;
+    }
+
+    .div-container-main{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-container-h2{
+        font-size: 38px;
+    }
+
+    .intro-text{
+        width: 60%;
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .div-container-ul-cards{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 8rem;
+    }
+
+    .card-container{
+        background-color: palegoldenrod;
+        width: 14rem;
+        height: 15rem;
+        margin: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: rgba(54, 54, 54, 0.226) 25px 20px 25px;
+        transition: transform 0.5s;
+    }
+
+    .card-container:hover{
+        transform: translateX(2px) scale(1.2);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3);
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
+        transform: scale(1.1); /* O ícone pode crescer levemente */
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3);
+        transform: scale(1);
     }
 }
